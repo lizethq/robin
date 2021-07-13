@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="view_purchase_requisition_form_inherit" model="ir.ui.view">
+        <field name="name">purchase.requisition.form.inherit.view</field>
+        <field name="model">purchase.requisition</field>
+        <field name="inherit_id" ref="purchase_requisition.view_purchase_requisition_form"/>
+        <field name="arch" type="xml">                
+            <xpath expr="//field[@name='company_id']" position="after">
+                <field name="nueva_var" />
+                
+<!--                 <button name="action_approve_lines" string="Aprobar Lineas" type="object"/>
+                <button name="action_reject_lines" string="Rechazar Lineas" type="object"/> -->
+                
+                
+                
+            </xpath>
+        </field>                
+    </record>
+</odoo>
